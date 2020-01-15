@@ -1,13 +1,15 @@
 <template>
     <main class="layout">
-        <div class="layout__header"></div>
+        <div class="layout__header">
+            <h1>Home page</h1>
+        </div>
         <div class="layout__content"></div>
     </main>
 </template>
 
 <script>
     export default {
-        name: "Home",
+        name: "home",
     }
 </script>
 

@@ -2,7 +2,7 @@ import Vue from 'vue';
 import VueRouter from 'vue-router';
 Vue.use(VueRouter);
 
-import Home from '../pages/Home/Home';
+import Home from '../pages/home/Home';
 
 const router = new VueRouter({
     mode: 'history',

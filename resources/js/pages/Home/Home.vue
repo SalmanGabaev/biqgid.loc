@@ -1,9 +1,8 @@
 <template>
-    <v-layout class="wrapper">
-        <v-row>
-            <filter-component></filter-component>
-        </v-row>
-    </v-layout>
+    <main class="layout">
+        <div class="layout__header"></div>
+        <div class="layout__content"></div>
+    </main>
 </template>
 
 <script>
@@ -12,5 +11,18 @@
     }
 </script>
 
-<style scoped>
+<style lang="scss">
+    .layout {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 3fr;
+
+        &__header {
+            background: red;
+        }
+
+        &__content {
+            background: blue;
+        }
+    }
 </style>

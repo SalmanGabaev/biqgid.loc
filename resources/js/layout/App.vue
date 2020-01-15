@@ -4,7 +4,7 @@
 
         <app-header class="app-wrapper__header"></app-header>
 
-        <v-content class="app-wrapper__content content">
+        <v-content class="app-wrapper__content">
             <v-container fluid fill-height>
                 <router-view></router-view>
             </v-container>
@@ -31,11 +31,12 @@
 
 <style lang="scss" scoped>
     .app-wrapper {
-        &__navigation {
-            background: #001529;
+        &__navigation, &__header {
+            background: #032b43ba;
         }
     }
     .container--fluid {
         max-width: 100%;
+        padding: 0;
     }
 </style>

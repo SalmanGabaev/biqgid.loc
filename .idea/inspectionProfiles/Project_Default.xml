@@ -4,7 +4,7 @@
     <inspection_tool class="HtmlUnknownTag" enabled="true" level="WARNING" enabled_by_default="true">
       <option name="myValues">
         <value>
-          <list size="30">
+          <list size="37">
             <item index="0" class="java.lang.String" itemvalue="nobr" />
             <item index="1" class="java.lang.String" itemvalue="noembed" />
             <item index="2" class="java.lang.String" itemvalue="comment" />
@@ -35,6 +35,13 @@
             <item index="27" class="java.lang.String" itemvalue="v-col" />
             <item index="28" class="java.lang.String" itemvalue="v-row" />
             <item index="29" class="java.lang.String" itemvalue="filter-component" />
+            <item index="30" class="java.lang.String" itemvalue="a-date-picker" />
+            <item index="31" class="java.lang.String" itemvalue="a-form-item" />
+            <item index="32" class="java.lang.String" itemvalue="a-form" />
+            <item index="33" class="java.lang.String" itemvalue="v-card" />
+            <item index="34" class="java.lang.String" itemvalue="a-select-option" />
+            <item index="35" class="java.lang.String" itemvalue="v-subheader" />
+            <item index="36" class="java.lang.String" itemvalue="v-divider" />
           </list>
         </value>
       </option>

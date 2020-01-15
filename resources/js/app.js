@@ -34,12 +34,19 @@ files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
 
-import Routes from './routes/routes';
+import router from './routes/routes';
+import store from './store/store';
+
 import App from './layout/App';
 
 const app = new Vue({
-    el: '#app',         // <-- register router with Vue
-    router: Routes,
-    vuetify : new Vuetify(),
-    render: (h) => h(App) // <-- render App component
+    el: '#app',
+    router,
+    store,
+    vuetify : new Vuetify({
+        icons: {
+            iconfont: 'md',
+        },
+    }),
+    render: (h) => h(App)
 });

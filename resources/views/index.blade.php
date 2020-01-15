@@ -26,12 +26,6 @@
 </head>
 <body>
     <div id="app"></div>
-
-    <style>
-        #app {
-            background: #f5f5f5;
-        }
-    </style>
 </body>
 </html>
 

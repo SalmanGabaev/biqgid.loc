@@ -1,14 +1,10 @@
 const mix = require('laravel-mix');
+require('laravel-mix-alias');
 
-
-mix.webpackConfig({
-    resolve: {
-        extensions: ['.js', '.vue'],
-        alias: {
-            '@' :__dirname + './resources/js'
-        }
-    }
-});
+mix.alias('@', '/resources/js');
+mix.alias('@css', '/resources/sass');
+mix.alias('@components', '/resources/js/components');
+mix.alias('@pages', '/resources/js/pages');
 
 
 /*

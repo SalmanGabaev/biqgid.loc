@@ -1,5 +1,5 @@
 <template>
-    <v-app-bar app flat dense dark class="header">
+    <v-app-bar app flat dense class="header">
         <v-app-bar-nav-icon class="header__trigger-icon">
             <v-icon size="20">mdi-format-indent-decrease</v-icon>
         </v-app-bar-nav-icon>
@@ -22,8 +22,8 @@
         <v-spacer/>
 
         <v-toolbar-items>
-            <v-btn text>Регистрация</v-btn>
-            <v-btn text>Войти</v-btn>
+            <v-btn text to="/register">Регистрация</v-btn>
+            <v-btn text to="/login">Войти</v-btn>
         </v-toolbar-items>
     </v-app-bar>
 </template>
@@ -36,6 +36,8 @@
 
 <style lang="scss" scoped>
     .header {
+        box-shadow: 0px 0px 7px -4px black;
+
         &__trigger-icon {
             outline: none;
         }

@@ -1,6 +1,6 @@
 <template>
-    <v-col cols="12" md="12" class="filter">
-        <v-card class="p-2 filter__card" flat>
+    <v-col cols="12" md="12" class="filter p-0">
+        <v-card flat tile class="p-2 filter__card">
             <a-form layout="inline" class="filter__form">
                 <a-form-item label="Что ищем ? " class="filter__item ml-3" has-feedback>
                     <a-select defaultValue="транспорт" style="width: 120px">
@@ -37,49 +37,6 @@
                     <a-button type="link">расширенные фильтры</a-button>
                 </a-form-item>
             </a-form>
-
-            <v-row>
-
-
-                <!--<v-col cols="12" md="2">
-                    <a-form class="m-0">
-                        <a-form-item label='Username'>
-                            <a-input
-                                v-decorator="[
-            'username',
-            {
-              rules: [{ required: true, message: 'Username is required!' }],
-            }
-          ]"
-                            />
-                        </a-form-item>
-                    </a-form>
-                </v-col>
-
-                <v-col cols="12" md="3">
-                    <a-form>
-                        <a-form-item label="Откуда">
-                            <a-input v-model="startPoint"/>
-                        </a-form-item>
-                    </a-form>
-                </v-col>
-
-                <v-col cols="12" md="2">
-                    <a-form>
-                        <a-form-item label="Откуда">
-                            <a-input v-model="startPoint"/>
-                        </a-form-item>
-                    </a-form>
-                </v-col>
-
-                <v-col cols="12" md="2">
-                    <a-form>
-                        <a-form-item label="Откуда">
-                            <a-input v-model="startPoint"/>
-                        </a-form-item>
-                    </a-form>
-                </v-col>-->
-            </v-row>
         </v-card>
     </v-col>
 </template>
@@ -100,6 +57,10 @@
 </script>
 
 <style lang="scss" scoped>
+    .filter__card {
+        box-shadow: 0px 1px 7px -5px black;
+    }
+    
     #components-form-demo-vuex .language-bash {
         max-width: 400px;
         border-radius: 6px;

@@ -31,8 +31,10 @@
 
 <style lang="scss" scoped>
     .app-wrapper {
-        &__navigation, &__header {
-            background: #032b43ba;
+        background: #f5f5f9;
+
+        &__navigation {
+            background: #001529;
         }
     }
     .container--fluid {

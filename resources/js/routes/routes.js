@@ -2,7 +2,9 @@ import Vue from 'vue';
 import VueRouter from 'vue-router';
 Vue.use(VueRouter);
 
-import Home from '../pages/home/Home';
+import Home from '@pages/home/Home';
+import Register from '@pages/auth/Register';
+import Login from '@pages/auth/Login';
 
 const router = new VueRouter({
     mode: 'history',
@@ -12,6 +14,18 @@ const router = new VueRouter({
             path: '/',
             name: 'home',
             component: Home,
+        },
+
+        {
+            path: '/register',
+            name: 'register',
+            component: Register,
+        },
+
+        {
+            path: '/login',
+            name: 'login',
+            component: Login,
         },
     ],
 });

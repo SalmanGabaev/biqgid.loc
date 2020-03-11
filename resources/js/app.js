@@ -43,10 +43,6 @@ const app = new Vue({
     el: '#app',
     router,
     store,
-    vuetify : new Vuetify({
-        icons: {
-            iconfont: 'md',
-        },
-    }),
+    vuetify : new Vuetify(),
     render: (h) => h(App)
 });
